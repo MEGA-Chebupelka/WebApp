@@ -1,0 +1,109 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+html,body {
+    width:100%;
+    height:100%;
+    background: white;
+    display: block;
+    overflow: auto;
+}
+
+.fundTypeContainer {
+    position: relative;
+    display: flex;
+    background-color: #EEE;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 100%;
+    font-size: 14px;
+}
+
+    .fundTypeContainer .fundType {
+        flex-basis: 200px;
+        text-align: center;
+    }
+
+        .fundTypeContainer .fundType input {
+            display: none;
+        }
+
+        .fundTypeContainer .fundType .fundName {
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+            padding: .5rem 0;
+            color: rgba(51, 65, 85, 1);
+            transition: all .15s ease-in-out;
+        }
+
+        .fundTypeContainer .fundType input:checked + .fundName {
+            background-color: #5995ee;
+            border:1px solid blue;
+            font-weight: 600;
+        }
+#fund {
+    padding: .5rem .5rem;
+}
+#oil{
+    color: red;
+}
+#pressure{
+    color: blue;
+}
+#gas{
+    color: black;
+}
+
+.cont{
+    display: flex;
+}
+.analiticFormTypeCont {
+    position: relative;
+    display: block;
+    border: 1px solid grey;
+    background-color: #EEE;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.5rem;
+    width: 15%;
+    font-size: 15px;
+    overflow: hidden;
+}
+.analiticFormTypeCont li{
+    list-style: none;
+}
+.startBtn{
+    width:100%;
+    border:2px solid;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom:4px;
+}
+    .startBtn:hover {
+        background-color: white;
+    }
+    .startBtn:active {
+        background-color: white;
+        box-shadow: 1px 1px;
+
+    }
+
+.treeView{
+    display: flex;
+    flex-direction: column;
+    width: 29%;
+    border: 1px solid grey;
+    background-color: #EEE;
+}
+
+    .treeView .lables {
+        border-bottom: 1px solid grey;
+        text-align: center;
+        padding: 2px;
+    }

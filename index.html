@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebApp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <div class="fundTypeContainer">
+        <label id="fund">Вид фонда:</label>
+        <label class="fundType">
+            <input type="radio" name="radio" checked="">
+            <span class="fundName" id="oil">нефтяной</span>
+        </label>
+        <label class="fundType">
+            <input type="radio" name="radio">
+            <span class="fundName" id="pressure">нагнетательный</span>
+        </label>
+    
+        <label class="fundType">
+            <input type="radio" name="radio" >
+            <span class="fundName" id="gas">газоконденсатный</span>
+        </label>
+    </div>
+
+    <div class="cont">
+
+        <div class="analiticFormTypeCont">
+            <ol class="orderListBlock">
+                <li class="point">
+                    <label>Вид аналитической формы</label><br />
+                    <input type="radio" id="radio1" name="analiticForm" value="uf" checked /> Скважины ЭФ<br/>
+                    <input type="radio" id="rasdio2" name="analiticForm" value="other" /> прочие:
+                    <select id="debitsSelect" disabled>
+                        <option value="one"> Изменение дебитов</option>
+                        <option value="two"> Другое</option>
+                    </select>
+                </li>
+                <li class="point">
+                    <label>Дата начала периода</label>
+                    <input type="date" id="dateStart" />
+                </li>
+                <li class="point">
+                    <label>Дата конца периода анализа</label>
+                    <input type="date" id="dateEnd" />
+                </li>
+            </ol>
+            <button class="startBtn" type="button">
+                <b>Запуск АФ >>></b>
+            </button>
+        </div>
+
+        <div class="treeView" id="company">
+            <p class="lables">Предприятие</p>
+            <div class="firm"></div>
+        </div>
+        <div class="treeView" id="deposit">
+            <p class="lables">Месторождения</p>
+            <div class="field"></div>
+        </div>
+        <div class="treeView" id="oilCollection">
+            <p class="lables">Объекты нефтесбора</p>
+            <div class="facility"></div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
